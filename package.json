@@ -1,17 +1,22 @@
 {
-  "name": "blog-website",
+  "name": "blog-web",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "home.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devstart": "nodemon app.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "ejs": "^2.6.1",
-    "express": "^4.16.3",
-    "lodash": "^4.17.21"
+    "dompurify": "^2.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "jsdom": "^17.0.0",
+    "marked": "^3.0.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.0.6",
+    "slugify": "^1.6.0"
   }
 }

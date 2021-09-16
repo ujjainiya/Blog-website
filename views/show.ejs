@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+    <h1 class="mb-1"><%= post.title %></h1>
+    <div class="text-muted mb-2">
+      <%= post.time %>
+    </div>
+    <a href="/" class="btn btn-secondary">All Articles</a>
+    <a href="edit/<%= post.id %>" class="btn btn-info">Edit</a>
+
+    <div>
+      
+      <%- post.sanitizedHtml%>
+    </div>
+    <h1><%=title%></h1>
+   
+    <div>
+      
+     <p> <%=content%></p>
+    </div>
+  </div>
+</body>
+</html>

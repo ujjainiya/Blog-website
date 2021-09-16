@@ -1,17 +1,19 @@
-<%- include("partials/header") -%>
-<h1><%=place%></h1>
-<form class="item" action="/compose" method="post" >
-<div class="form-group">
-
-   <label for="">Title</label>
-<input class="form-control" type="text" name="postTitle" placeholder=" enter your title" >
-   <label for="">Post</label>
-<textarea class="form-control" name="postBody" id="postarea" cols="30" rows="10"></textarea>
-</div>
-<button class="btn btn-primary" type="submit" name="content" >submit</button>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+</head>
+<body>
+    <div class="container">
+ <h1>Compose article</h1>
+ <form action="/route" method="POST">
+    <%- include('form') %>
 </form>
-<%- include("partials/footer") -%>
 
-
+</div>
+</body>
+</html>
